@@ -36,7 +36,7 @@ First run creates a new vault (`vault.json`) and sets your master password. Ever
 ## Security considerations
 - The master password is the single point of failure - if it's weak or lost, the vault is either easily broken into or permanently inaccessible (there's no recovery mechanism here, intentionally, since a backdoor would defeat the purpose).
 - PBKDF2 with a high iteration count is used specifically to slow down brute-force attempts against the master password.
-- The salt is stored in plaintext alongside the data — this is normal and expected (salts aren't meant to be secret, they just prevent precomputed attacks like rainbow tables).
+- The salt is stored in plaintext alongside the data - this is normal and expected (salts aren't meant to be secret, they just prevent precomputed attacks like rainbow tables).
 - This is a learning project, not a production-grade password manager - it hasn't been audited and shouldn't be used to store real, sensitive credentials.
 
 ## Limitations
