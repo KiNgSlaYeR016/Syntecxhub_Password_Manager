@@ -8,7 +8,7 @@ Stores login credentials (site, username, password) encrypted on disk, locked be
 ## Features
 - Master password unlocks the whole vault
 - Credentials encrypted at rest using AES (via the `cryptography` library's Fernet implementation)
-- Master password is never stored — it's used to derive the encryption key each time
+- Master password is never stored - it's used to derive the encryption key each time
 - Add, retrieve, delete, and search credential entries
 - Password input is hidden while typing (no plaintext on screen)
 
