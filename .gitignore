@@ -2,6 +2,8 @@
 __pycache__/
 *.py[cod]
 *$py.class
+vault.json
+.venv/
 
 # C extensions
 *.so
